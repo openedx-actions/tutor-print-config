@@ -1,4 +1,4 @@
-name: Tutor k8s print config.yml
+name: Open edX Tutor k8s print config.yml
 description: Github Action to print the contents of tutor's config.xml to the
 branding:
   icon: 'cloud'
