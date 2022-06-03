@@ -9,7 +9,7 @@
 
 # tutor-print-config
 
-Github Action to print the contents of tutor's config.xml to the
+Github Action to print the contents of tutor's config.xml to the console
 
 
 ## Usage:
