@@ -11,6 +11,8 @@
 
 Github Action to print the contents of tutor's config.xml to the console
 
+This action was originally created for [Cookiecutter Tutor Open edX Production Devops Tools](https://github.com/lpm0073/cookiecutter-openedx-devops) but it should also work with your own custom workflows.
+
 
 ## Usage:
 
@@ -38,11 +40,19 @@ jobs:
 
       # install and configure tutor and kubectl
       - name: Initialize environment
-        uses: openedx-actions/tutor-k8s-init@v0.0.13
+        uses: openedx-actions/tutor-k8s-init@v1.0.0
         with:
           namespace: openedx-prod
 
+      #
+      # do some tutor configuration stuff ...
+      #
+
       # This action.
       - name: Print tutor config.yml
-        uses: openedx-actions/tutor-print-config@v0.0.1
+        uses: openedx-actions/tutor-print-config@v1.0.0
+
+      #
+      # do some more tutor configuration stuff ...
+      #
 ```
